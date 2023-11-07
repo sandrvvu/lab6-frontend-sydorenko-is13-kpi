@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(94, 41, 144);
+}
+
+#root {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#getDataButton {
+    cursor: pointer;
+    width: 350px;
+    padding: 1em;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#getDataButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 20px rgb(49, 22, 79);
+}
+
+#getDataButton:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(49, 22, 79);
+}
+
+#content {
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 2em 2.5em;
+    box-shadow: 15px 15px 10px rgb(49, 22, 79);
+
+}
+
+#picture {
+    border: 3px solid rgb(49, 22, 79);
+    border-radius: 50%;
+    width: 150px;
+}
+
+.info p {
+    display: flex;
+    justify-content: space-between;
+    gap: 8em;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info p span {
+    font-weight: 400;
+}
+
+#error {
+    margin-top: 2em;
+    font-size: 4rem;
+    font-weight: 600;
+    color: red;
+}
